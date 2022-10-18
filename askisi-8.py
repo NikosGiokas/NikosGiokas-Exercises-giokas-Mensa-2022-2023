@@ -10,12 +10,12 @@
 limit = int(input("Give me a number: "))
 asteraki = "*"
 for i in range(0,limit+1):
-    asteraki = asteraki + "****"
+    asteraki = asteraki + "*"
     
     print(asteraki)
     
 for i in range(0,limit+1):
-    asteraki = asteraki[:-4]
+    asteraki = asteraki[:-1]
     
     print(asteraki)
     
