@@ -20,7 +20,16 @@ input("stranded on a raft...")
 input("now you need to survive...")
 input("by finding stuff, crafting stuff and eventually...")
 input("consuming them.")
-# /\
-# ||
-# ||
+#  /\
+# /||\
+#  ||
+#  ||
 #intro code
+
+#   /\
+#  /||\
+# /|  |\
+#   ||
+#   ||
+#   ||
+#commands code
