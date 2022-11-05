@@ -16,6 +16,7 @@ badP = 0
 if speed <= 70:
     print("okay") 
     
+#mipos yparxei pio exypnos tropos apo auto???
 if speed <= 75 and speed >= 71 :
     print("one bad point") 
     badP = 1

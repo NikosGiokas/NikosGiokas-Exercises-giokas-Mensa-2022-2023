@@ -11,7 +11,7 @@
 # askisi 1.a
 listOfPointers = [0,1,2,3,4]
 print(listOfPointers)
-listOfPointers.clear
+listOfPointers.clear() #einai synartisi thelei ()
 
 # askisi 1.b
 listOfNumbers = []
@@ -38,10 +38,10 @@ for i in range(1,11):
     personalList.append(input("give me a number: "))
 print(personalList)
 
-
+'''
 
 # askisi 3
-persList = [1]
+persList = [1] # den sou leei na bazeis proto stoixeio diko sou
 while( persList[-1] != 0):
     persListnum=int(input("give me a number"))
     if(persListnum != 0):
@@ -49,10 +49,10 @@ while( persList[-1] != 0):
     else:
         break
 print(persList)
-'''
+
 
 # askisi 4
-persList = ["hello"]
+persList = ["hello"] # den sou leei na bazeis proto stoixeio
 while( persList[-1] != "end"):
     persListstr=input("give me a word")
     if(persListstr != "end"):
