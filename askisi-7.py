@@ -7,6 +7,8 @@
 #  
 # 
 # #
+
+#i askisi 7 einai alli kai tin exeis kanei lathos 
 limit = int(input("Give me a number: "))
 asteraki = "*"
 for i in range(0,limit+1):

@@ -19,3 +19,14 @@ for i in range(0,limit+1):
     
     print(asteraki)
     
+'''
+    gia n=1
+    typonei
+    **
+    ***
+    **
+    *
+    anti gia
+    *
+    *
+'''
