@@ -65,3 +65,67 @@ for i in range(n):
         nameFunc()
 
 print("___________________\n")
+
+
+
+
+
+
+####
+# Mathima 4
+# askisi 5
+# 
+#  @author Niko
+#  Version  0.0.1
+#  Date  6.11.2022    
+#    
+# #
+def squared(num):
+    return num * num
+
+
+
+
+
+####ß
+# Mathima 4
+# askisi 6
+# 
+#  @author Niko
+#  Version  0.0.1
+#  Date  6.11.2022    
+#    
+# #
+def rectEmbado(a,b):
+    return a * b
+
+
+
+
+####
+# Mathima 4
+# askisi 7
+# 
+#  @author Niko
+#  Version  0.0.1
+#  Date  6.11.2022    
+#    
+# #
+def triangleEmbado(base, height):
+    return base * height / 2
+
+
+
+####
+# Mathima 4
+# askisi 8
+# 
+#  @author Niko
+#  Version  0.0.1
+#  Date  6.11.2022    
+#    
+# #
+
+def salestax(price):
+    return price * 1.24
+

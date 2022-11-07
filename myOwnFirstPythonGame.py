@@ -13,6 +13,7 @@ for i in range(0,5,1):
 # ||
 # ||
 #start code
+
 print("RAFT survival")
 input("press enter to continue... ")
 input("you find yourself in a sticky situation...")
@@ -25,10 +26,14 @@ input("consuming them.")
 #  ||                              
 #  ||                              
 #intro code  
+eat = False
+build = False
+drink = False
+#def getCommand():
 
                           
 #  /\                              
 # /||\                              
 #  ||                              
 #  ||                              
-#commands code                              
+#commands code
