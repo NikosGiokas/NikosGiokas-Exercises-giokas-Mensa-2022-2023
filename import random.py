@@ -47,17 +47,3 @@ readInput(secret)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

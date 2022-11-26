@@ -18,7 +18,11 @@ def func():
 def readmove(token):
     global board
     while True:
-        move = int(input("give me a number from 1 to 9: "))
+        try:
+            move = int(input("give me a number from 1 to 9: "))
+        except:
+            print("only numbers please")
+            continue
         if move <1 or move >9:
             print("please enter a valid number")
         else:
@@ -27,8 +31,6 @@ def readmove(token):
             else:
                 board[move-1] = token
                 return
-
-
 def changeturn():
     global token
     if token == "X":
@@ -36,11 +38,27 @@ def changeturn():
     else:
         token = "X"
 def checkWinner():
-    return True
-for i in range(10):
+    for i in range(0,7,3):
+        if board[i]==board[i+1]==board[i+2]:
+            return True
+    for i in range(3):
+        if board[i]==board[i+3]==board[i+6]:
+            return True
+    if board[0]==board[4]==board[8]:
+        return True
+    if board[2]==board[4]==board[6]:
+        return True
+    return False
+winner=""
+for i in range(9):
     func()
     readmove(token)
     if checkWinner():
-        print(token + " has won!")
+        winner = token
+        print(winner + " has won!")
         break
     changeturn()
+if winner == "":
+    print("it's a tie") 
+else:
+    print(winner," has won")
