@@ -14,13 +14,13 @@
 
 bathmologies = []
 
-
-while len(bathmologies)<10:
-    bathmos = int(input("give me a value from 1 to 20: "))
-    if bathmos>0 and bathmos<21:
-        bathmologies.append(bathmos)
-    else:
-        print("please enter a valid number")
+def eisagogiVathmologion():
+  while len(bathmologies)<10:
+      bathmos = int(input("give me a value from 1 to 20: "))
+      if bathmos>0 and bathmos<21:
+          bathmologies.append(bathmos)
+      else:
+           print("please enter a valid number")
 
 def mesosOros():
     sUm = 0
@@ -30,38 +30,46 @@ def mesosOros():
 
     return print( sUm/10)
 
-mesosOros()
+#mesosOros()
+#eisagogiVathmologion()
 
 
 # askisi 6  
+ #Να γράψετε μία συνάρτηση σε python η οποία θα παίρνει ως όρισμα μία λίστα με αριθμούς και
+ #  θα επιστρέφει τον μικρότερο από αυτούς
 
-#arithmoi = [int(input("give me a value")),int(input("give me a value")),int(input("give me a value")),]
-#def mikrotero():
-#    global arithmoi
-#    if arithmoi[0] < arithmoi[1] and arithmoi[0]<arithmoi[2]:
-#        return print(arithmoi[0]," is smaller")
-#    elif arithmoi[1] < arithmoi[0] and arithmoi[1]<arithmoi[2]:
-#        return print(arithmoi[1]," is smaller")
-#    elif arithmoi[2] < arithmoi[1] and arithmoi[2]<arithmoi[0]:
-#        return print(arithmoi[2]," is smaller")
-#    else:
-#        return print("some are the same")
-#mikrotero()
+#eisagogiVathmologion()
+
+def findMin():
+    min = bathmologies[0]
+    for vathos in bathmologies:
+        if vathos<min:
+            min = vathos
+    print("The number ", min, "is the smallest")
+    return min
+        
+
+#findMin()
+
+
+
 
 # askisi 7 
-#def posesForesMikro():
-#    global arithmoi
-#    if arithmoi[0] < arithmoi[1] and arithmoi[0]<arithmoi[2]:
-#        return print(arithmoi[0]," is smaller")
-#    elif arithmoi[1] < arithmoi[0] and arithmoi[1]<arithmoi[2]:
-#        return print(arithmoi[1]," is smaller")
-#    elif arithmoi[2] < arithmoi[1] and arithmoi[2]<arithmoi[0]:
-#        return print(arithmoi[2]," is smaller")
-#    elif arithmoi[0] == arithmoi[1]:
-#        return print( arithmoi[0],"and", arithmoi[1],"are the same")
-#    elif arithmoi[1] == arithmoi[2]:
-#        return print( arithmoi[0],"and", arithmoi[1],"are the same")
-#    elif arithmoi[2] == arithmoi[0]:
-#        return print( arithmoi[0],"and", arithmoi[1],"are the same")
-#posesForesMikro()
+#Να γράψετε μία συνάρτηση σε python η οποία θα δέχεται ως όρισμα μία λίστα και θα υπολογίζει ποιος είναι 
+# ο μικρότερος αριθμός και θα επιστρέφει πόσες φορές αυτός εμφανίζεται.
 
+
+
+counter = 0
+def counterOfSmallesNumberOfBathmologies():
+    global counter
+    min = findMin()
+    for vathmos in bathmologies:
+        if vathmos==min:
+            counter = counter+1
+    print("The number ", min, " is found ",counter," in the list.")
+    
+        
+
+eisagogiVathmologion()
+counterOfSmallesNumberOfBathmologies()
