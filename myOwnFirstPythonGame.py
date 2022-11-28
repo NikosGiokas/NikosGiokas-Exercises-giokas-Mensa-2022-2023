@@ -20,16 +20,18 @@ input("you find yourself in a sticky situation...")
 input("stranded on a raft...")
 input("now you need to survive...")
 input("by finding stuff, crafting stuff and eventually...")
-input("consuming them.")
+input("escape.")
 #  /\                              
 # /||\                              
 #  ||                              
 #  ||                              
 #intro code  
 eat = False
-build = False
+craft = False
 drink = False
-#def getCommand():
+def getCommand():
+    command = input("insert command. /n possible commands: #eat, #quit, #craft, and most important #info  ")
+
 
                           
 #  /\                              
