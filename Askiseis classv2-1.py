@@ -10,9 +10,9 @@
 # #
 
 class Car:
-    def __init__(self, make,speed, color, year):
+    def __init__(self, make, color, year):
         self.make=make
-        self.speed  = speed
+        self.speed  = 60
         self.color  = color
         self.year = year
     def speed_up(self,speed):
