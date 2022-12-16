@@ -5,7 +5,7 @@
 #Askiseis apo 11 eos 13
 #  @author Niko
 #  Version  0.0.1
-#  Date  19.11.2022    
+#  Date  16.12.2022    
 #    
 # #
 
@@ -49,4 +49,11 @@ def findWordWithMostVowels(words):
         num_vowels = 0
     print( biggestWord," has the most vowels, ",maxvowel)
 
-findWordWithMostVowels(lekseis)
+#findWordWithMostVowels(lekseis)
+
+
+# Askisi 13
+# Γράψτε μία συνάρτηση σε python η οποία θα δέχεται ως όρισμα μία λίστα από αριθμούς 
+# (πιθανόν καθένας από αυτούς να εμφανίζεται περισσότερες από μία φορά) 
+# και θα επιστρέφει μία λίστα όπου κάθε αριθμός εμφανίζεται μόνο μία φορά δηλαδή θα αφαιρεί 
+# τυχόν διπλοεγγραφές

@@ -41,9 +41,12 @@ print(personalList)
 '''
 
 # askisi 3
-persList = [1] # den sou leei na bazeis proto stoixeio diko sou
-while( persList[-1] != 0):
-    persListnum=int(input("give me a number"))
+# Να γράψετε πρόγραμμα σε python το οποίο θα δημιουργεί μία λίστα και θα τη γεμίζει με 
+# αριθμούς που θα δίνει ο χρήστης. Η εισαγωγή θα τελειώνει όταν ο χρήστης θα δίνει το μηδέν. 
+# Το μηδέν δεν θα εισάγεται στη λίστα. 
+persList = [] #den sou leei na bazeis proto stoixeio diko sou
+while(True):
+    persListnum=int(input("give me a number: "))
     if(persListnum != 0):
         persList.append(persListnum)
     else:
@@ -51,13 +54,23 @@ while( persList[-1] != 0):
 print(persList)
 
 
+
+
+
+
+
+
+
+
+
 # askisi 4
-persList = ["hello"] # den sou leei na bazeis proto stoixeio
-while( persList[-1] != "end"):
-    persListstr=input("give me a word")
+# Pos tha mporouse na ginei kalutera??????
+persList = [] # den sou leei na bazeis proto stoixeio
+while(True):
+    persListstr=input("give me a word: ")
     if(persListstr != "end"):
         persList.append(persListstr)
     else:
         break
-persList.append("end")
+
 print(persList)
