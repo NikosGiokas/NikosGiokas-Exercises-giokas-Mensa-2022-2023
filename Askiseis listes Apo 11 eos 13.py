@@ -15,14 +15,14 @@
 # και θα επιστρέφει το άθροισμα των στοιχείων της. 
 
 
-nums = [2,3,1]
+#nums = [int(input("give me a number"))*10]
 
-finalNum = 0
-def getAthroisma():
-    global finalNum
-    for num in nums:
-        finalNum += num
-    print("sum = ",finalNum)
+#finalNum = 0
+#def getAthroisma():
+#    global finalNum
+#    for num in nums:
+#        finalNum += num
+#    print("sum = ",finalNum)
 
 #getAthroisma()
 
@@ -57,3 +57,29 @@ def findWordWithMostVowels(words):
 # (πιθανόν καθένας από αυτούς να εμφανίζεται περισσότερες από μία φορά) 
 # και θα επιστρέφει μία λίστα όπου κάθε αριθμός εμφανίζεται μόνο μία φορά δηλαδή θα αφαιρεί 
 # τυχόν διπλοεγγραφές
+
+
+
+
+
+numList = [
+    int(input("give me a number")),
+int(input("give me a number")),
+int(input("give me a number")),
+]
+toBeCheckedNums = []
+finalList = []
+def removeDuplicates():
+    global numList,toBeCheckedNums,finalList
+    for number in numList:
+        if number in toBeCheckedNums:
+            numList.remove(number)
+        else:
+            toBeCheckedNums.append(number)
+            
+    finalList = numList
+    numList.clear
+    print(finalList)
+
+
+removeDuplicates()
