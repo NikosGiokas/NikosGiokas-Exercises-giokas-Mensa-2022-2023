@@ -12,3 +12,6 @@ except ZeroDivisionError:
     exit
 
 print(a,"/",b,"=",c)
+
+
+
