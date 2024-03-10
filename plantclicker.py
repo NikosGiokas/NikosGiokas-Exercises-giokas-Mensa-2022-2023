@@ -102,16 +102,19 @@ while Spielstand:
         seeds-=shopprice[0]
         shopprice[0]+=5
         amountOfBuildings[0]+=1
+        shopcounter[0]+=1
     if event.type == pygame.MOUSEBUTTONDOWN and mpos2 > sliderY[1] and mpos2 < sliderY[2] and mpos1 >600 and mpos1 < 700 and seeds > shopprice[1]:
         totalSPS += 10
         seeds-=shopprice[1]
         shopprice[1]+=33
         amountOfBuildings[1]+=1
+        shopcounter[1]+=1
     if event.type == pygame.MOUSEBUTTONDOWN and mpos2 > sliderY[2] and mpos2 < sliderY[3] and mpos1 >600 and mpos1 < 700 and seeds > shopprice[2]:
         totalSPS += 100
         seeds-=shopprice[2]
         shopprice[2]+=500
         amountOfBuildings[2]+=1
+        shopcounter[2]+=1
     if event.type == pygame.MOUSEBUTTONDOWN and mpos1 > 550 and mpos1 < 570 and mpos2 > 150 and mpos2 < 170:
         sliderY[0]-=2
         sliderY[1]-=2
