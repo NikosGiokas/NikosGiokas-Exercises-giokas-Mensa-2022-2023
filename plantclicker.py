@@ -29,14 +29,14 @@ a_seed5 = Achievement("affluent garden"," make 100M cookies",[seeds,99999999,Fal
 a_seed6 = Achievement("world-famous garden"," make 1B cookies",[seeds,999999999,False,"s"],400,375+sliderY[4],False)
 a_seed7 = Achievement("cosmic garden"," make 100B cookies",[seeds,99999999999,False,"s"],400,430+sliderY[4],False)
 a_seed8 = Achievement("galactic garden"," make 1T cookies",[seeds,999999999999,False,"s"],400,485+sliderY[4],False)
-a_sps1 = Achievement("casual gardening","make 1 seed per sec",[totalSPS,1,False,"sps"],400,540+sliderY[4],False)
-a_sps2 = Achievement("hardcore gardening","make 10 seeds per sec",[totalSPS,10,False,"sps"],400,595+sliderY[4],False)
-a_sps3 = Achievement("steady growing stream","make 100 seeds per sec",[totalSPS,100,False,"sps"],400,650+sliderY[4],False)
-a_sps4 = Achievement("seed monster","make 1000 seeds per sec",[totalSPS,1000,False,"sps"],400,705+sliderY[4],False)
-a_sps5 = Achievement("mass producer","make 10000 seeds per sec",[totalSPS,10000,False,"sps"],400,760+sliderY[4],False)
-a_sps6 = Achievement("seed vortex","make 100000 seeds per sec",[totalSPS,100000,False,"sps"],400,815+sliderY[4],False)
-a_sps7 = Achievement("casual gardening","make 1000000 seeds per sec",[totalSPS,1000000,False,"sps"],400,870+sliderY[4],False)
-a_sps8 = Achievement("casual gardening","make 10000000 seeds per sec",[totalSPS,10000000,False,"sps"],400,925+sliderY[4],False)
+a_sps1 = Achievement("casual gardening","make 1 seed per sec",[totalSPS,0,False,"sps"],400,540+sliderY[4],False)
+a_sps2 = Achievement("hardcore gardening","make 10 seeds per sec",[totalSPS,9,False,"sps"],400,595+sliderY[4],False)
+a_sps3 = Achievement("steady growing stream","make 100 seeds per sec",[totalSPS,99,False,"sps"],400,650+sliderY[4],False)
+a_sps4 = Achievement("seed monster","make 1000 seeds per sec",[totalSPS,999,False,"sps"],400,705+sliderY[4],False)
+a_sps5 = Achievement("mass producer","make 10000 seeds per sec",[totalSPS,9999,False,"sps"],400,760+sliderY[4],False)
+a_sps6 = Achievement("seed vortex","make 100000 seeds per sec",[totalSPS,99999,False,"sps"],400,815+sliderY[4],False)
+a_sps7 = Achievement("seed pulsar","make 1000000 seeds per sec",[totalSPS,999999,False,"sps"],400,870+sliderY[4],False)
+a_sps8 = Achievement("seed quasar","make 10000000 seeds per sec",[totalSPS,9999999,False,"sps"],400,925+sliderY[4],False)
 
 achievementList = [a_seed1,a_seed2,a_seed3,a_seed4,a_seed5,a_seed6,a_seed7,a_seed8,a_sps1,a_sps2,a_sps3,a_sps4,a_sps5,a_sps6,a_sps7,a_sps8]
 
