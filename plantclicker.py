@@ -2,6 +2,7 @@ import pygame
 import sys
 import random
 from AchievementPL import Achievement
+from UpgradePL import Upgrade
 pygame.init()
 width = 800
 height = 800
@@ -42,6 +43,10 @@ achievementList = [a_seed1,a_seed2,a_seed3,a_seed4,a_seed5,a_seed6,a_seed7,a_see
 
 
 
+u_gen1 = Upgrade("fertilizer","sps*2",["sps",2,False],300,100+sliderY[4],False)
+
+
+upgradeList= [u_gen1,]
 
 
 
@@ -152,13 +157,28 @@ while Spielstand:
         bugFull ==False
         isBugOnPlant == False
         bugX ==360
-#    for i in range(0,totalSPS):
-#       pygame.draw.rect(screen,brown,(0,random.randint(1,250),0,3,3))
+    
+    for i in upgradeList:
+        pygame.draw.rect(screen,skyC,(300,0,100,800))
+        i.run(screen,yellow,font,black)
+        if changed:
+            i.Y+=change
+        
+        if event.type == pygame.MOUSEBUTTONDOWN and mpos1> i.X and mpos1< i.X and mpos2> i.Y and mpos2< i.Y and i.taken == False:
+            if i.rec1[0] == "s":
+                seeds*2
+            elif i.rec1[3] == "sps":
+                totalSPS*2
+        
+    
+    
+    
+    
     
     text_surface = fontBig.render(str(seeds)+" seeds", True, (0, 255, 0))
     
     plantHitbox = pygame.draw.rect(screen,skyC,(60,100,100,180))
-    plantBackground = pygame.draw.rect(screen,skyC,(0,0,400,800))
+    plantBackground = pygame.draw.rect(screen,skyC,(0,0,300,800))
     plantBackground = pygame.draw.rect(screen,skyC,(500,0,600,800))
     dirt = pygame.draw.rect(screen,brown,(0,250,250,40))
     stem = pygame.draw.rect(screen,green,(80,150,20,100))

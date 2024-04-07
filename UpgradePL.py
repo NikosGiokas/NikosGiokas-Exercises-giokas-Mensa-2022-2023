@@ -1,9 +1,10 @@
 import pygame
 
 class Upgrade:
-    def __init__(self,name,up,X,Y,taken):
+    def __init__(self,name,rec,rec1,X,Y,taken):
         self.name = name 
-        self.up = up
+        self.rec = rec
+        self.rec1=rec1
         self.X = X
         self.Y = Y
         self.taken=taken
@@ -21,6 +22,7 @@ class Upgrade:
     def run(self,screen,color,font,fontColor):
         self.hide(screen,color)
         self.show(screen,font,fontColor)
-        if self.rec1[0]>self.rec1[1] or self.taken:
+        if self.taken:
             self.show(screen,font,fontColor)
+            color = (0,125,0)
             self.taken=True
